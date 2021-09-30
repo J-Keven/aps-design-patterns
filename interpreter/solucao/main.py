@@ -1,5 +1,5 @@
 
-from interpreter import Numero, Add, Sub, InterfaceExpression
+from interpreter import Numero, Add, Sub, InterfaceInterprete
 
 
 if __name__ == "__main__":
@@ -13,7 +13,7 @@ if __name__ == "__main__":
         imagine aqui um método de processamento que
         converte a string nas expressões matemáticas
     """
-    listaAbistrata: list[InterfaceExpression] = []
+    listaAbistrata: list[InterfaceInterprete] = []
     listaAbistrata.append(Add(Numero(tokens[0]), Numero(tokens[2])))    # 5 + 4
     listaAbistrata.append(
         Sub(listaAbistrata[0],

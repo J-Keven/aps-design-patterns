@@ -1,1 +1,1 @@
-from .expressao import Numero, Add, Sub, InterfaceExpression
+from .expressao import Numero, Add, Sub, InterfaceInterprete

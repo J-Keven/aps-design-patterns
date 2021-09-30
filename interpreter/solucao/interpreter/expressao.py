@@ -1,7 +1,7 @@
-from .interface import InterfaceExpression
+from .interface import InterfaceInterprete
 
 
-class Numero(InterfaceExpression):
+class Numero(InterfaceInterprete):
 
     def __init__(self, value):
         self._value = int(value)
@@ -13,7 +13,7 @@ class Numero(InterfaceExpression):
         return str(self._value)
 
 
-class Add(InterfaceExpression):
+class Add(InterfaceInterprete):
 
     def __init__(self, esquerda, direita):
         self._esquerda = esquerda
@@ -26,7 +26,7 @@ class Add(InterfaceExpression):
         return f"({self._esquerda} Add {self._direita})"
 
 
-class Sub(InterfaceExpression):
+class Sub(InterfaceInterprete):
 
     def __init__(self, esquerda, direita):
         self._esquerda = esquerda

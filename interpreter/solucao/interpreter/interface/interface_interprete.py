@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class InterfaceExpression(ABC):
+class InterfaceInterprete(ABC):
 
     @staticmethod
     @abstractmethod

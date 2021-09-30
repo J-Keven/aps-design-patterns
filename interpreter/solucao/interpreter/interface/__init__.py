@@ -1,1 +1,1 @@
-from .interface_interprete import InterfaceExpression
+from .interface_interprete import InterfaceInterprete
