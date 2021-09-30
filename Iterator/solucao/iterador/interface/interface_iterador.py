@@ -1,4 +1,4 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
 
 class InterfaceIterador(ABC):
@@ -6,10 +6,10 @@ class InterfaceIterador(ABC):
     """
         Classe abistrata a qual nossas classes de iteradores devem seguir
     """
-    @abstractclassmethod
+    @abstractmethod
     def tem_prox(self):
         pass
 
-    @abstractclassmethod
+    @abstractmethod
     def prox(self):
         pass
